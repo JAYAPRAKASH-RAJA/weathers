@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9ff;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background: linear-gradient(
+        135deg,
+        rgba(240, 248, 255, 0.8), /* Transparent AliceBlue */
+        rgba(128, 0, 128, 0.8) /* Transparent Purple */
+    ); /* Gradient background */
+    border-radius: 20px; /* Rounded container shape */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    padding: 20px;
+    margin: auto;
+    max-width: 80%; /* Ensure it fits well on the page */
+}
+
+.card {
+    background: linear-gradient(
+        135deg,
+        rgba(220, 228, 225, 0.9), /* Transparent AliceBlue */
+        rgba(128, 0, 128, 0.11) /* Transparent Purple */
+    ); /* Gradient background for the card */
+    padding: 20px;
+    border-radius: 15px; /* Rounded card shape */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px; /* Add some spacing below the icon */
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Weather Information</h1>
+    <div class="container" id="weatherContainer">
+
+
+        <div class="card">
+            <h2>Salem</h2>
+            <img src="https://openweathermap.org/img/wn/50d@2x.png" alt="Weather Icon">
+            <p>Temperature: 25.31°C</p>
+            <p>Mist</p>
+            <p>Humidity: 73%</p>
+            <p>Wind Speed: 5.14 m/s</p>
+        </div>
+        
+    </div>
+</body>
+</html>
